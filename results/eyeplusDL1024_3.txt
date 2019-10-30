@@ -1,0 +1,4544 @@
+category: 12 size: 1024  epochs: 300  r_net: 4  batch size: 1025  reg_parameter: 0.0
+Net(
+  (r1_l1_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r1_l1_pool1): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (r1_l2_fc1): Linear(in_features=1024, out_features=4)
+  (r1_l2_fc2): Linear(in_features=4, out_features=4)
+  (r1_l2_fc3): Linear(in_features=4, out_features=1024)
+  (r1_l3_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r2_l1_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r2_l1_pool1): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (r2_l2_fc1): Linear(in_features=512, out_features=4)
+  (r2_l2_fc2): Linear(in_features=4, out_features=4)
+  (r2_l2_fc3): Linear(in_features=4, out_features=512)
+  (r2_l2_exp): Conv1d (1, 2, kernel_size=(1,), stride=(1,), bias=False)
+  (r2_l3_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r2_l3_exp): Conv1d (1, 2, kernel_size=(1,), stride=(1,), bias=False)
+  (r3_l1_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r3_l1_pool1): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (r3_l1_exp): Conv1d (1, 8, kernel_size=(1,), stride=(1,), bias=False)
+  (r3_l2_fc1): Linear(in_features=256, out_features=4)
+  (r3_l2_fc2): Linear(in_features=4, out_features=4)
+  (r3_l2_fc3): Linear(in_features=4, out_features=256)
+  (r3_l2_exp): Conv1d (1, 4, kernel_size=(1,), stride=(1,), bias=False)
+  (r3_l3_conv1): Conv1d (1, 4, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+  (r3_l3_exp): Conv1d (1, 4, kernel_size=(1,), stride=(1,), bias=False)
+  (error_function): MSELoss(
+  )
+)
+[[1.0015024  0.00150233 0.0015021  ... 0.00150171 0.0015021  0.00150233]
+ [0.00150236 1.00150219 0.00150186 ... 0.00150194 0.00150224 0.00150237]
+ [0.00150222 0.00150195 1.00150153 ... 0.00150208 0.00150228 0.00150233]
+ ...
+ [0.00150198 0.00150219 0.00150224 ... 1.00150045 0.00150111 0.00150163]
+ [0.00150222 0.00150233 0.00150228 ... 0.00150096 1.00150153 0.00150195]
+ [0.00150236 0.00150237 0.00150224 ... 0.00150138 0.00150186 1.00150219]]
+Condition number: 1.9363923152808824
+Initial Loss: 
+ 4600.3271
+[torch.DoubleTensor of size 1]
+
+Initial grad norm: Variable containing:
+ 55514.5253
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1
+--------------EPOCH  0 ------------
+Absolute Loss: 17.983324056087675
+Relative Loss: Variable containing:
+1.00000e-03 *
+  3.9091
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  3.1803
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.13905032417803453
+Time elapsed: 56.97060990333557
+Learning rate: 1
+--------------EPOCH  1 ------------
+Absolute Loss: 4.095786159254644
+Relative Loss: Variable containing:
+1.00000e-04 *
+  8.9032
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  2.4257
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.23320892901362716
+Time elapsed: 110.01121735572815
+Learning rate: 1
+--------------EPOCH  2 ------------
+Absolute Loss: 1.7591053796737095
+Relative Loss: Variable containing:
+1.00000e-04 *
+  3.8239
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.3096
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.21242304935032832
+Time elapsed: 152.5008454322815
+Learning rate: 1
+--------------EPOCH  3 ------------
+Absolute Loss: 1.468461324661483
+Relative Loss: Variable containing:
+1.00000e-04 *
+  3.1921
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.9544
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.22149919396583617
+Time elapsed: 193.70673298835754
+Learning rate: 1
+--------------EPOCH  4 ------------
+Absolute Loss: 1.0839693256494285
+Relative Loss: Variable containing:
+1.00000e-04 *
+  2.3563
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.4683
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.2393774495750007
+Time elapsed: 238.13490796089172
+Learning rate: 1
+--------------EPOCH  5 ------------
+Absolute Loss: 0.8866577956443067
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.9274
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.5790
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.21887307383602456
+Time elapsed: 278.1393506526947
+Learning rate: 1
+--------------EPOCH  6 ------------
+Absolute Loss: 0.8420037374136218
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.8303
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.8757
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.21532901719032888
+Time elapsed: 319.5686991214752
+Learning rate: 1
+--------------EPOCH  7 ------------
+Absolute Loss: 0.8248079514692049
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.7929
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.3725
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.2072368995029405
+Time elapsed: 360.87118458747864
+Learning rate: 1
+--------------EPOCH  8 ------------
+Absolute Loss: 0.7981099968400329
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.7349
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  6.9839
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19896922295775246
+Time elapsed: 404.09207034111023
+Learning rate: 1
+--------------EPOCH  9 ------------
+Absolute Loss: 0.7823382045055894
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.7006
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  7.5616
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19893123882199087
+Time elapsed: 444.5786883831024
+Learning rate: 1
+--------------EPOCH  10 ------------
+Absolute Loss: 0.7747123618925532
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6840
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  8.5465
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19709279505422253
+Time elapsed: 489.2029378414154
+Learning rate: 1
+--------------EPOCH  11 ------------
+Absolute Loss: 0.7670257919182283
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6673
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  5.1787
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19160540800674236
+Time elapsed: 533.6764693260193
+Learning rate: 1
+--------------EPOCH  12 ------------
+Absolute Loss: 0.7656799496356363
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6644
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.2282
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.191314631326304
+Time elapsed: 577.2923903465271
+Learning rate: 1
+--------------EPOCH  13 ------------
+Absolute Loss: 0.7647147441932007
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6623
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.7630
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1917274099473619
+Time elapsed: 618.7434406280518
+Learning rate: 1
+--------------EPOCH  14 ------------
+Absolute Loss: 0.7628208957891225
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6582
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.2094
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1923642410104159
+Time elapsed: 659.4719560146332
+Learning rate: 1
+--------------EPOCH  15 ------------
+Absolute Loss: 0.7604296238095417
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6530
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.5101
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.194554239811449
+Time elapsed: 701.8460910320282
+Learning rate: 1
+--------------EPOCH  16 ------------
+Absolute Loss: 0.7597185914277513
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6514
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.6978
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19364377958754034
+Time elapsed: 744.3866517543793
+Learning rate: 1
+--------------EPOCH  17 ------------
+Absolute Loss: 0.759179292501212
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6503
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.7619
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19427811192199537
+Time elapsed: 787.9868030548096
+Learning rate: 1
+--------------EPOCH  18 ------------
+Absolute Loss: 0.7584209503285763
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6486
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.7572
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19395378313716385
+Time elapsed: 830.2413065433502
+Learning rate: 1
+--------------EPOCH  19 ------------
+Absolute Loss: 0.7572936028784362
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6462
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.8300
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19317105233949095
+Time elapsed: 875.1261281967163
+Learning rate: 0.5
+--------------EPOCH  20 ------------
+Absolute Loss: 0.7570907088241136
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6457
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.3002
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19356355019536087
+Time elapsed: 922.5617790222168
+Learning rate: 1
+--------------EPOCH  21 ------------
+Absolute Loss: 0.7567637383590966
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6450
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.5590
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.192832958023178
+Time elapsed: 963.8669102191925
+Learning rate: 1
+--------------EPOCH  22 ------------
+Absolute Loss: 0.756171383180329
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6437
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.9467
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19297491202252526
+Time elapsed: 1005.1582825183868
+Learning rate: 1
+--------------EPOCH  23 ------------
+Absolute Loss: 0.7559509942542411
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6433
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.6131
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19295548548392122
+Time elapsed: 1050.3792736530304
+Learning rate: 1
+--------------EPOCH  24 ------------
+Absolute Loss: 0.7558993465945815
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6431
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.4650
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19269694529197062
+Time elapsed: 1095.3781263828278
+Learning rate: 1
+--------------EPOCH  25 ------------
+Absolute Loss: 0.7558212503274633
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6430
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.9740
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1924631522510415
+Time elapsed: 1138.533170223236
+Learning rate: 1
+--------------EPOCH  26 ------------
+Absolute Loss: 0.7556329670747399
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6426
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.6489
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1919100029027959
+Time elapsed: 1180.7374486923218
+Learning rate: 1
+--------------EPOCH  27 ------------
+Absolute Loss: 0.7547136683198375
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6406
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.3724
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1920892967060584
+Time elapsed: 1220.9782090187073
+Learning rate: 1
+--------------EPOCH  28 ------------
+Absolute Loss: 0.7541583140986355
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6394
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.8874
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19305778823612155
+Time elapsed: 1263.764970779419
+Learning rate: 1
+--------------EPOCH  29 ------------
+Absolute Loss: 0.7540511258406563
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6391
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.9412
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19333389176178709
+Time elapsed: 1308.9020936489105
+Learning rate: 1
+--------------EPOCH  30 ------------
+Absolute Loss: 0.7537324911340546
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6384
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.6558
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1941162007612074
+Time elapsed: 1355.0586133003235
+Learning rate: 1
+--------------EPOCH  31 ------------
+Absolute Loss: 0.7531691220262551
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6372
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.3468
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19469812634386127
+Time elapsed: 1396.6708734035492
+Learning rate: 1
+--------------EPOCH  32 ------------
+Absolute Loss: 0.752858777658411
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6365
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.1752
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19444432362196262
+Time elapsed: 1438.0991532802582
+Learning rate: 0.5
+--------------EPOCH  33 ------------
+Absolute Loss: 0.7528009465554198
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6364
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.9698
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19453299232103397
+Time elapsed: 1482.8072357177734
+Learning rate: 1
+--------------EPOCH  34 ------------
+Absolute Loss: 0.752727651678533
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6362
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.7812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1946022694786183
+Time elapsed: 1528.7706615924835
+Learning rate: 0.5
+--------------EPOCH  35 ------------
+Absolute Loss: 0.7521767710090851
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6351
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.5500
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19544742486834954
+Time elapsed: 1573.7183380126953
+Learning rate: 1
+--------------EPOCH  36 ------------
+Absolute Loss: 0.7516881166675126
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6340
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.8309
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19573017505103485
+Time elapsed: 1616.3653652668
+Learning rate: 1
+--------------EPOCH  37 ------------
+Absolute Loss: 0.7516713695866891
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6340
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.1567
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19579690332835809
+Time elapsed: 1669.0939564704895
+Learning rate: 1
+--------------EPOCH  38 ------------
+Absolute Loss: 0.7516229732375599
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6338
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.4216
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.195744518522292
+Time elapsed: 1714.629473209381
+Learning rate: 1
+--------------EPOCH  39 ------------
+Absolute Loss: 0.7510009620913373
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6325
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  5.1183
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1957444865245848
+Time elapsed: 1755.0451991558075
+Learning rate: 1
+--------------EPOCH  40 ------------
+Absolute Loss: 0.7505936559632768
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6316
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.5612
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19527510137693022
+Time elapsed: 1798.3182489871979
+Learning rate: 1
+--------------EPOCH  41 ------------
+Absolute Loss: 0.7504672233103318
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6313
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.3450
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19533821747879518
+Time elapsed: 1841.1396374702454
+Learning rate: 1
+--------------EPOCH  42 ------------
+Absolute Loss: 0.7503579350115341
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6311
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.0734
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19525363510589033
+Time elapsed: 1890.2368223667145
+Learning rate: 1
+--------------EPOCH  43 ------------
+Absolute Loss: 0.7500786700173727
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6305
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.1121
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19539925434962346
+Time elapsed: 1932.4270136356354
+Learning rate: 1
+--------------EPOCH  44 ------------
+Absolute Loss: 0.7489591909548557
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6281
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  6.7206
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19880861449034215
+Time elapsed: 1975.3116047382355
+Learning rate: 1
+--------------EPOCH  45 ------------
+Absolute Loss: 0.7482564083505865
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6265
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.8595
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19855662662289733
+Time elapsed: 2018.348252773285
+Learning rate: 1
+--------------EPOCH  46 ------------
+Absolute Loss: 0.7478997765836798
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6258
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.9232
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1979817662100857
+Time elapsed: 2063.4409894943237
+Learning rate: 1
+--------------EPOCH  47 ------------
+Absolute Loss: 0.747640695851604
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6252
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.3176
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1975270748200227
+Time elapsed: 2106.5977914333344
+Learning rate: 1
+--------------EPOCH  48 ------------
+Absolute Loss: 0.7472826128173248
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6244
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.9669
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19723074470508692
+Time elapsed: 2148.424728870392
+Learning rate: 1
+--------------EPOCH  49 ------------
+Absolute Loss: 0.7470074628271632
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6238
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.6493
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19707974701218023
+Time elapsed: 2191.553913116455
+Learning rate: 1
+--------------EPOCH  50 ------------
+Absolute Loss: 0.7469322511138217
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6237
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  4.6183
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19702783283629682
+Time elapsed: 2239.259954214096
+Learning rate: 1
+--------------EPOCH  51 ------------
+Absolute Loss: 0.746674190351158
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6231
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.4799
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19629581527907497
+Time elapsed: 2282.3696582317352
+Learning rate: 1
+--------------EPOCH  52 ------------
+Absolute Loss: 0.7457857004041271
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6212
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.6337
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1955429723232259
+Time elapsed: 2324.5937085151672
+Learning rate: 1
+--------------EPOCH  53 ------------
+Absolute Loss: 0.7456217370936135
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6208
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.6435
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19584536880166933
+Time elapsed: 2368.4326679706573
+Learning rate: 1
+--------------EPOCH  54 ------------
+Absolute Loss: 0.7455347913014564
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6206
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  1.9563
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19603040296722085
+Time elapsed: 2414.124485015869
+Learning rate: 1
+--------------EPOCH  55 ------------
+Absolute Loss: 0.7451638630542057
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6198
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  4.7419
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19792790184709722
+Time elapsed: 2455.102011203766
+Learning rate: 1
+--------------EPOCH  56 ------------
+Absolute Loss: 0.7423546218611509
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6137
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  6.5900
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19741527880457665
+Time elapsed: 2497.4373018741608
+Learning rate: 1
+--------------EPOCH  57 ------------
+Absolute Loss: 0.7416276696775818
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6121
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  3.0419
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19763451367784854
+Time elapsed: 2540.8740594387054
+Learning rate: 1
+--------------EPOCH  58 ------------
+Absolute Loss: 0.7413553810988961
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6115
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  2.6797
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19731188788362136
+Time elapsed: 2585.926409006119
+Learning rate: 1
+--------------EPOCH  59 ------------
+Absolute Loss: 0.7402406278803868
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6091
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  6.3067
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19804541500032533
+Time elapsed: 2627.8987987041473
+Learning rate: 1
+--------------EPOCH  60 ------------
+Absolute Loss: 0.7375373270405962
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.6032
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  7.0458
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19574062994253993
+Time elapsed: 2669.668268442154
+Learning rate: 1
+--------------EPOCH  61 ------------
+Absolute Loss: 0.7356613597372483
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5992
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  6.0489
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1971509263001603
+Time elapsed: 2711.6065940856934
+Learning rate: 1
+--------------EPOCH  62 ------------
+Absolute Loss: 0.734670430140392
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5970
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  4.7188
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19742396193879522
+Time elapsed: 2755.12345290184
+Learning rate: 1
+--------------EPOCH  63 ------------
+Absolute Loss: 0.7339695560087501
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5955
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  4.8987
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19637602358738776
+Time elapsed: 2798.5460970401764
+Learning rate: 1
+--------------EPOCH  64 ------------
+Absolute Loss: 0.7336108260647602
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5947
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  5.5204
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19574494498580536
+Time elapsed: 2843.9983286857605
+Learning rate: 1
+--------------EPOCH  65 ------------
+Absolute Loss: 0.7306021894079103
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5882
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-05 *
+  7.4357
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19710384979781947
+Time elapsed: 2884.288254737854
+Learning rate: 1
+--------------EPOCH  66 ------------
+Absolute Loss: 0.7248761245892067
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5757
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.1229
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19387273388533288
+Time elapsed: 2927.3347585201263
+Learning rate: 1
+--------------EPOCH  67 ------------
+Absolute Loss: 0.7128546211726045
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5496
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.8908
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.192206653856724
+Time elapsed: 2971.059049844742
+Learning rate: 1
+--------------EPOCH  68 ------------
+Absolute Loss: 0.7046500099027533
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5317
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.3989
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19339570905068992
+Time elapsed: 3015.7765023708344
+Learning rate: 1
+--------------EPOCH  69 ------------
+Absolute Loss: 0.7014098631969845
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5247
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.1056
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19112968923509968
+Time elapsed: 3057.87122130394
+Learning rate: 1
+--------------EPOCH  70 ------------
+Absolute Loss: 0.6991999822656408
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5199
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.9852
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18992832219232428
+Time elapsed: 3100.3814492225647
+Learning rate: 1
+--------------EPOCH  71 ------------
+Absolute Loss: 0.6959616401927493
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.5129
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.4036
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.19081196912232842
+Time elapsed: 3140.944974899292
+Learning rate: 0.5
+--------------EPOCH  72 ------------
+Absolute Loss: 0.6834519718552167
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4857
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.4335
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18730699353763883
+Time elapsed: 3183.2173578739166
+Learning rate: 0.5
+--------------EPOCH  73 ------------
+Absolute Loss: 0.6722683152756249
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4613
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.1267
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18461680312472994
+Time elapsed: 3227.640691280365
+Learning rate: 1
+--------------EPOCH  74 ------------
+Absolute Loss: 0.6686077167427933
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4534
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.6347
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18245472730134893
+Time elapsed: 3272.3009197711945
+Learning rate: 1
+--------------EPOCH  75 ------------
+Absolute Loss: 0.6586966126192221
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4318
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.9144
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1832186368192994
+Time elapsed: 3312.344593524933
+Learning rate: 1
+--------------EPOCH  76 ------------
+Absolute Loss: 0.6562395939807348
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4265
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.7169
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18301482593027532
+Time elapsed: 3355.5516953468323
+Learning rate: 1
+--------------EPOCH  77 ------------
+Absolute Loss: 0.6544390359415467
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4226
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.6074
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18225104708342124
+Time elapsed: 3399.265129804611
+Learning rate: 1
+--------------EPOCH  78 ------------
+Absolute Loss: 0.6491076452130142
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.4110
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.3956
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18170140911382845
+Time elapsed: 3441.1179134845734
+Learning rate: 1
+--------------EPOCH  79 ------------
+Absolute Loss: 0.6436680005033821
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3992
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.4108
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1797832981250543
+Time elapsed: 3483.157495737076
+Learning rate: 1
+--------------EPOCH  80 ------------
+Absolute Loss: 0.6356629259405056
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3818
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0491
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18393906959997275
+Time elapsed: 3525.030553817749
+Learning rate: 1
+--------------EPOCH  81 ------------
+Absolute Loss: 0.6348465262745776
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3800
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.6462
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18303015317364746
+Time elapsed: 3570.959161043167
+Learning rate: 1
+--------------EPOCH  82 ------------
+Absolute Loss: 0.63466934359973
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3796
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0946
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18277095748002722
+Time elapsed: 3616.313867330551
+Learning rate: 1
+--------------EPOCH  83 ------------
+Absolute Loss: 0.6344689535784558
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3792
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.4007
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18312648094008344
+Time elapsed: 3659.249077796936
+Learning rate: 1
+--------------EPOCH  84 ------------
+Absolute Loss: 0.6324312326610683
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3748
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.9228
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1837820569949638
+Time elapsed: 3701.385048389435
+Learning rate: 1
+--------------EPOCH  85 ------------
+Absolute Loss: 0.6239081477435166
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3562
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1375
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18251851413260375
+Time elapsed: 3744.5756726264954
+Learning rate: 1
+--------------EPOCH  86 ------------
+Absolute Loss: 0.618908295414147
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3454
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.0334
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1837407918104265
+Time elapsed: 3786.8220007419586
+Learning rate: 1
+--------------EPOCH  87 ------------
+Absolute Loss: 0.614880313625537
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3366
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.1479
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1843257731182663
+Time elapsed: 3831.219931602478
+Learning rate: 1
+--------------EPOCH  88 ------------
+Absolute Loss: 0.6132897968036225
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3331
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.4661
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.183844834251439
+Time elapsed: 3874.2341361045837
+Learning rate: 1
+--------------EPOCH  89 ------------
+Absolute Loss: 0.6130164614338928
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3325
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.8773
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18305156390936358
+Time elapsed: 3921.9088850021362
+Learning rate: 1
+--------------EPOCH  90 ------------
+Absolute Loss: 0.612877036555706
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3322
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.0249
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18288506621869513
+Time elapsed: 3963.8039524555206
+Learning rate: 1
+--------------EPOCH  91 ------------
+Absolute Loss: 0.6127962971849868
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3321
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.7325
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1827631208872374
+Time elapsed: 4007.384530067444
+Learning rate: 1
+--------------EPOCH  92 ------------
+Absolute Loss: 0.6110489147691538
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3283
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.3778
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18217405100132725
+Time elapsed: 4048.9402062892914
+Learning rate: 1
+--------------EPOCH  93 ------------
+Absolute Loss: 0.6022561934639844
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.3092
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  2.2498
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18316949250348613
+Time elapsed: 4091.2647001743317
+Learning rate: 1
+--------------EPOCH  94 ------------
+Absolute Loss: 0.5975622643739507
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2990
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.1864
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18215784837332502
+Time elapsed: 4133.624625921249
+Learning rate: 1
+--------------EPOCH  95 ------------
+Absolute Loss: 0.5966286512861413
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2969
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.5529
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18216891436746271
+Time elapsed: 4176.15683555603
+Learning rate: 1
+--------------EPOCH  96 ------------
+Absolute Loss: 0.596226196311018
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2961
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.0213
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18208912926100218
+Time elapsed: 4218.431948661804
+Learning rate: 1
+--------------EPOCH  97 ------------
+Absolute Loss: 0.5961509605665815
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2959
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.6796
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18189531621749938
+Time elapsed: 4261.764189720154
+Learning rate: 1
+--------------EPOCH  98 ------------
+Absolute Loss: 0.5960102771806641
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2956
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.2916
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18209650520084278
+Time elapsed: 4302.993671655655
+Learning rate: 1
+--------------EPOCH  99 ------------
+Absolute Loss: 0.5958937656219273
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2953
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.3777
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18193688979126008
+Time elapsed: 4345.975324869156
+Learning rate: 1
+--------------EPOCH  100 ------------
+Absolute Loss: 0.5957925129590473
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2951
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.8468
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18227183942776715
+Time elapsed: 4390.414419412613
+Learning rate: 1
+--------------EPOCH  101 ------------
+Absolute Loss: 0.5955252000362381
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2945
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.8936
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18207675057224473
+Time elapsed: 4431.959354400635
+Learning rate: 1
+--------------EPOCH  102 ------------
+Absolute Loss: 0.5953849100005354
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2942
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.5804
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18197434540604365
+Time elapsed: 4475.841255903244
+Learning rate: 1
+--------------EPOCH  103 ------------
+Absolute Loss: 0.5950600536563091
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2935
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.4751
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18221277074949116
+Time elapsed: 4521.286124944687
+Learning rate: 1
+--------------EPOCH  104 ------------
+Absolute Loss: 0.5940096311776354
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2912
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1816
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18110308952507193
+Time elapsed: 4565.033864974976
+Learning rate: 1
+--------------EPOCH  105 ------------
+Absolute Loss: 0.5907933818405776
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2842
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.6320
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.18015636867628212
+Time elapsed: 4607.475661754608
+Learning rate: 1
+--------------EPOCH  106 ------------
+Absolute Loss: 0.5878195891719616
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2778
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.4065
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1789492741364938
+Time elapsed: 4649.078013896942
+Learning rate: 0.5
+--------------EPOCH  107 ------------
+Absolute Loss: 0.5873085838261674
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2767
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.6660
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1786564827993695
+Time elapsed: 4693.548019886017
+Learning rate: 1
+--------------EPOCH  108 ------------
+Absolute Loss: 0.5868462283523938
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2757
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.2920
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1788415771080805
+Time elapsed: 4738.428738355637
+Learning rate: 1
+--------------EPOCH  109 ------------
+Absolute Loss: 0.5865186445761166
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2749
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.1205
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1776595659772097
+Time elapsed: 4779.6973333358765
+Learning rate: 1
+--------------EPOCH  110 ------------
+Absolute Loss: 0.5862406293683052
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2743
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.1292
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17859462446260055
+Time elapsed: 4822.243323087692
+Learning rate: 1
+--------------EPOCH  111 ------------
+Absolute Loss: 0.5860416464945365
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2739
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.6877
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17834576300523755
+Time elapsed: 4864.083698749542
+Learning rate: 1
+--------------EPOCH  112 ------------
+Absolute Loss: 0.5858157928084855
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.8345
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17830621278102507
+Time elapsed: 4905.504424571991
+Learning rate: 1
+--------------EPOCH  113 ------------
+Absolute Loss: 0.5857937855556372
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.9859
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17821736110850894
+Time elapsed: 4953.304169654846
+Learning rate: 1
+--------------EPOCH  114 ------------
+Absolute Loss: 0.5857891046994728
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.8309
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17827153052761882
+Time elapsed: 5004.709561347961
+Learning rate: 1
+--------------EPOCH  115 ------------
+Absolute Loss: 0.5857877099766817
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.7577
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17826100455795862
+Time elapsed: 5058.152274131775
+Learning rate: 1
+--------------EPOCH  116 ------------
+Absolute Loss: 0.585786706332702
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.7726
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17826311425732536
+Time elapsed: 5110.738122701645
+Learning rate: 0.5
+--------------EPOCH  117 ------------
+Absolute Loss: 0.5857863740575521
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.6101
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1782539703861118
+Time elapsed: 5163.0763602256775
+Learning rate: 1
+--------------EPOCH  118 ------------
+Absolute Loss: 0.5857859961086448
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.6293
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1782521447658672
+Time elapsed: 5217.302097558975
+Learning rate: 1
+--------------EPOCH  119 ------------
+Absolute Loss: 0.5857852798468282
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.4074
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17825301584427006
+Time elapsed: 5264.104144573212
+Learning rate: 0.03125
+--------------EPOCH  120 ------------
+Absolute Loss: 0.585784635510915
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.9258
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1782168585985597
+Time elapsed: 5322.171122550964
+Learning rate: 1
+--------------EPOCH  121 ------------
+Absolute Loss: 0.5857838207205953
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2734
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.7037
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17821816591435372
+Time elapsed: 5370.517724275589
+Learning rate: 1
+--------------EPOCH  122 ------------
+Absolute Loss: 0.5857817217980972
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.0122
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1782542520759293
+Time elapsed: 5438.599219799042
+Learning rate: 0.015625
+--------------EPOCH  123 ------------
+Absolute Loss: 0.5857789114687855
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.7281
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17824186264523834
+Time elapsed: 5490.632363319397
+Learning rate: 0.125
+--------------EPOCH  124 ------------
+Absolute Loss: 0.5857772798381098
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.8609
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17825805426753083
+Time elapsed: 5565.847419977188
+Learning rate: 1
+--------------EPOCH  125 ------------
+Absolute Loss: 0.585775281555469
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.3154
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17827749438207988
+Time elapsed: 5613.7751886844635
+Learning rate: 0.5
+--------------EPOCH  126 ------------
+Absolute Loss: 0.5857690998119283
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.8960
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1783019507591065
+Time elapsed: 5665.1858632564545
+Learning rate: 1
+--------------EPOCH  127 ------------
+Absolute Loss: 0.5857626436299294
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0736
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1782863275702398
+Time elapsed: 5718.032573699951
+Learning rate: 0.125
+--------------EPOCH  128 ------------
+Absolute Loss: 0.5857610987890979
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0357
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17828733684654885
+Time elapsed: 5776.100223302841
+Learning rate: 1
+--------------EPOCH  129 ------------
+Absolute Loss: 0.5857591793434559
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.3102
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.178254640495754
+Time elapsed: 5829.019109487534
+Learning rate: 0.0625
+--------------EPOCH  130 ------------
+Absolute Loss: 0.5857569403040473
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2733
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.1038
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1781880824313538
+Time elapsed: 5893.733055591583
+Learning rate: 0.5
+--------------EPOCH  131 ------------
+Absolute Loss: 0.5857194518887028
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2732
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.5874
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17825658503830194
+Time elapsed: 5967.460765838623
+Learning rate: 1
+--------------EPOCH  132 ------------
+Absolute Loss: 0.5855247720592301
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2728
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1496
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17837222053181387
+Time elapsed: 6038.222809076309
+Learning rate: 1
+--------------EPOCH  133 ------------
+Absolute Loss: 0.5842289229370916
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2700
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0070
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17766781781060112
+Time elapsed: 6084.885172843933
+Learning rate: 1
+--------------EPOCH  134 ------------
+Absolute Loss: 0.5787754563517238
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2581
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.7798
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1760738766579991
+Time elapsed: 6120.176293373108
+Learning rate: 1
+--------------EPOCH  135 ------------
+Absolute Loss: 0.5732214502858309
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2460
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  2.7191
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17536764324246576
+Time elapsed: 6163.151846647263
+Learning rate: 0.25
+--------------EPOCH  136 ------------
+Absolute Loss: 0.5716201448079881
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2426
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.4132
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17573801203876144
+Time elapsed: 6200.979849815369
+Learning rate: 1
+--------------EPOCH  137 ------------
+Absolute Loss: 0.5713406032580782
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2420
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.2359
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17638192979914616
+Time elapsed: 6237.543153047562
+Learning rate: 1
+--------------EPOCH  138 ------------
+Absolute Loss: 0.571122422032824
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2415
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0796
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17638901448824834
+Time elapsed: 6281.505591869354
+Learning rate: 1
+--------------EPOCH  139 ------------
+Absolute Loss: 0.5710811737599224
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2414
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.5878
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1763664235634943
+Time elapsed: 6319.776063680649
+Learning rate: 1
+--------------EPOCH  140 ------------
+Absolute Loss: 0.5710690194123522
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2414
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.6109
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17629914909482805
+Time elapsed: 6356.991021633148
+Learning rate: 1
+--------------EPOCH  141 ------------
+Absolute Loss: 0.57106050060652
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2413
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.4024
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1762429223025879
+Time elapsed: 6408.439167737961
+Learning rate: 1
+--------------EPOCH  142 ------------
+Absolute Loss: 0.5710586686578931
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2413
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0437
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17623021379291132
+Time elapsed: 6454.734892606735
+Learning rate: 1
+--------------EPOCH  143 ------------
+Absolute Loss: 0.5710578215457149
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2413
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.1555
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17623323828657647
+Time elapsed: 6502.378475189209
+Learning rate: 1
+--------------EPOCH  144 ------------
+Absolute Loss: 0.571055518280414
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2413
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.7369
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1762523351826562
+Time elapsed: 6540.99795126915
+Learning rate: 0.5
+--------------EPOCH  145 ------------
+Absolute Loss: 0.5710440493738852
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2413
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.9367
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17628315017978524
+Time elapsed: 6593.516999006271
+Learning rate: 1
+--------------EPOCH  146 ------------
+Absolute Loss: 0.5708832314163605
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2410
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.6256
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.175924900690928
+Time elapsed: 6641.980919837952
+Learning rate: 0.5
+--------------EPOCH  147 ------------
+Absolute Loss: 0.5698460813984549
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2387
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.3036
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17633064102669024
+Time elapsed: 6693.071044206619
+Learning rate: 0.25
+--------------EPOCH  148 ------------
+Absolute Loss: 0.5683338285200805
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2354
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  3.0520
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17471034952752065
+Time elapsed: 6761.75830411911
+Learning rate: 0.5
+--------------EPOCH  149 ------------
+Absolute Loss: 0.5641646260878816
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2264
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.8356
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17510432233254722
+Time elapsed: 6812.774195432663
+Learning rate: 1
+--------------EPOCH  150 ------------
+Absolute Loss: 0.5616894207926644
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2210
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.4283
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17412303024750073
+Time elapsed: 6868.401842832565
+Learning rate: 1
+--------------EPOCH  151 ------------
+Absolute Loss: 0.5605821846758274
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2186
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0218
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17392180803468424
+Time elapsed: 6930.382906913757
+Learning rate: 0.5
+--------------EPOCH  152 ------------
+Absolute Loss: 0.5603650264137244
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2181
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.0070
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17391740284184987
+Time elapsed: 6988.0210750103
+Learning rate: 0.25
+--------------EPOCH  153 ------------
+Absolute Loss: 0.5603377108790064
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.0545
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17389589897185792
+Time elapsed: 7046.969519138336
+Learning rate: 0.25
+--------------EPOCH  154 ------------
+Absolute Loss: 0.5603334218560895
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.0301
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17379182503721835
+Time elapsed: 7098.535267353058
+Learning rate: 1
+--------------EPOCH  155 ------------
+Absolute Loss: 0.5603263192013319
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.2607
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1738058641846261
+Time elapsed: 7143.701717376709
+Learning rate: 1
+--------------EPOCH  156 ------------
+Absolute Loss: 0.5603214325308871
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.7520
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17379403679475522
+Time elapsed: 7188.552317619324
+Learning rate: 1
+--------------EPOCH  157 ------------
+Absolute Loss: 0.5603184461488849
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.1570
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1737833400260273
+Time elapsed: 7234.869090080261
+Learning rate: 1
+--------------EPOCH  158 ------------
+Absolute Loss: 0.5603149482260962
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.4491
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17373501037250977
+Time elapsed: 7283.895706653595
+Learning rate: 1
+--------------EPOCH  159 ------------
+Absolute Loss: 0.560309277924141
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.5149
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1736875792140099
+Time elapsed: 7333.577566385269
+Learning rate: 0.0625
+--------------EPOCH  160 ------------
+Absolute Loss: 0.5603031765784546
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2180
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.2511
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17366124513035117
+Time elapsed: 7400.0191016197205
+Learning rate: 1
+--------------EPOCH  161 ------------
+Absolute Loss: 0.5602931507762636
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2179
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.9469
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1737917857439142
+Time elapsed: 7456.309292554855
+Learning rate: 1
+--------------EPOCH  162 ------------
+Absolute Loss: 0.5602647126329222
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2179
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.8225
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1736056691593577
+Time elapsed: 7515.088271856308
+Learning rate: 1
+--------------EPOCH  163 ------------
+Absolute Loss: 0.5601895203915458
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2177
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.3972
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1736006523875206
+Time elapsed: 7577.000880718231
+Learning rate: 1
+--------------EPOCH  164 ------------
+Absolute Loss: 0.5601352813996113
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2176
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.3836
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17364721799653832
+Time elapsed: 7626.491410970688
+Learning rate: 1
+--------------EPOCH  165 ------------
+Absolute Loss: 0.5600088614867299
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2173
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.1342
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.173861434143382
+Time elapsed: 7689.24404335022
+Learning rate: 1
+--------------EPOCH  166 ------------
+Absolute Loss: 0.5597818128651416
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2168
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.4543
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1733613260086669
+Time elapsed: 7742.94314622879
+Learning rate: 1
+--------------EPOCH  167 ------------
+Absolute Loss: 0.5596315364105044
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2165
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.5482
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1726797985911237
+Time elapsed: 7793.70658826828
+Learning rate: 1
+--------------EPOCH  168 ------------
+Absolute Loss: 0.5590193336067792
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2152
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.4577
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17300138777165447
+Time elapsed: 7848.160770654678
+Learning rate: 1
+--------------EPOCH  169 ------------
+Absolute Loss: 0.5574864599924435
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2118
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  3.3125
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17307306018997612
+Time elapsed: 7904.342501163483
+Learning rate: 1
+--------------EPOCH  170 ------------
+Absolute Loss: 0.556387130148243
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2095
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9807
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.173263284824592
+Time elapsed: 7956.675493240356
+Learning rate: 0.5
+--------------EPOCH  171 ------------
+Absolute Loss: 0.5560822822441883
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2088
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0403
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17377006829243036
+Time elapsed: 8008.062060594559
+Learning rate: 1
+--------------EPOCH  172 ------------
+Absolute Loss: 0.5558132463742032
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2082
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.9148
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17383415176823105
+Time elapsed: 8065.4744391441345
+Learning rate: 1
+--------------EPOCH  173 ------------
+Absolute Loss: 0.5554128765075415
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2073
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.3727
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17404020930549344
+Time elapsed: 8119.493455886841
+Learning rate: 0.5
+--------------EPOCH  174 ------------
+Absolute Loss: 0.5551102095026531
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2067
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.7444
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17481993271944787
+Time elapsed: 8177.98427772522
+Learning rate: 1
+--------------EPOCH  175 ------------
+Absolute Loss: 0.5549479046958492
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2063
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.1336
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17497307940045115
+Time elapsed: 8229.533053159714
+Learning rate: 1
+--------------EPOCH  176 ------------
+Absolute Loss: 0.5549001038109006
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2062
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.8230
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1749956867445337
+Time elapsed: 8281.534513235092
+Learning rate: 1
+--------------EPOCH  177 ------------
+Absolute Loss: 0.5548827614055826
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2062
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.9460
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17489648652863019
+Time elapsed: 8338.237686395645
+Learning rate: 1
+--------------EPOCH  178 ------------
+Absolute Loss: 0.5548580966445286
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2061
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.3239
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17477038818580423
+Time elapsed: 8387.55816936493
+Learning rate: 0.5
+--------------EPOCH  179 ------------
+Absolute Loss: 0.5548348821471768
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2061
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.7304
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17481613275979993
+Time elapsed: 8439.16651725769
+Learning rate: 1
+--------------EPOCH  180 ------------
+Absolute Loss: 0.5548105751954605
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.1349
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17486753979057607
+Time elapsed: 8490.894931077957
+Learning rate: 1
+--------------EPOCH  181 ------------
+Absolute Loss: 0.5548072688925598
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.9641
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17482902025605795
+Time elapsed: 8551.622309923172
+Learning rate: 1
+--------------EPOCH  182 ------------
+Absolute Loss: 0.5548028903101019
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0258
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17485027031123143
+Time elapsed: 8604.437931537628
+Learning rate: 1
+--------------EPOCH  183 ------------
+Absolute Loss: 0.5547973474466306
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.8243
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17485047337494178
+Time elapsed: 8646.81906247139
+Learning rate: 1
+--------------EPOCH  184 ------------
+Absolute Loss: 0.554793267603756
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.4191
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17488532624858444
+Time elapsed: 8690.067395687103
+Learning rate: 1
+--------------EPOCH  185 ------------
+Absolute Loss: 0.5547885426072383
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.3580
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17488143637781173
+Time elapsed: 8736.1235973835
+Learning rate: 1
+--------------EPOCH  186 ------------
+Absolute Loss: 0.5547859745619326
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.7835
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17491244403177283
+Time elapsed: 8783.214015960693
+Learning rate: 1
+--------------EPOCH  187 ------------
+Absolute Loss: 0.5547854958550041
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9327
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17492655081571437
+Time elapsed: 8829.839663982391
+Learning rate: 1
+--------------EPOCH  188 ------------
+Absolute Loss: 0.5547844998346634
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.6351
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17493984259415976
+Time elapsed: 8883.759787797928
+Learning rate: 0.25
+--------------EPOCH  189 ------------
+Absolute Loss: 0.5547805001409919
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2060
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.4880
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17482431878542085
+Time elapsed: 8937.21011686325
+Learning rate: 1
+--------------EPOCH  190 ------------
+Absolute Loss: 0.5547710140696512
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2059
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1428
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1749231585831391
+Time elapsed: 8994.813802957535
+Learning rate: 1
+--------------EPOCH  191 ------------
+Absolute Loss: 0.554745707099011
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2059
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0707
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17514049878381846
+Time elapsed: 9040.507094144821
+Learning rate: 0.25
+--------------EPOCH  192 ------------
+Absolute Loss: 0.5546948444378631
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2058
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.3910
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17496898637113736
+Time elapsed: 9092.809095144272
+Learning rate: 1
+--------------EPOCH  193 ------------
+Absolute Loss: 0.5546495632001981
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2057
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.8812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17497879418440976
+Time elapsed: 9137.857882738113
+Learning rate: 1
+--------------EPOCH  194 ------------
+Absolute Loss: 0.5545814289559114
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2055
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1075
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17516210614213973
+Time elapsed: 9190.581244468689
+Learning rate: 1
+--------------EPOCH  195 ------------
+Absolute Loss: 0.5542994491561831
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2049
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.3269
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1752075277260482
+Time elapsed: 9233.527819871902
+Learning rate: 1
+--------------EPOCH  196 ------------
+Absolute Loss: 0.5537875950657796
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2038
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.3110
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17507972503973826
+Time elapsed: 9284.029535531998
+Learning rate: 1
+--------------EPOCH  197 ------------
+Absolute Loss: 0.5534425130902612
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2031
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0174
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17477089358374082
+Time elapsed: 9330.77940773964
+Learning rate: 1
+--------------EPOCH  198 ------------
+Absolute Loss: 0.5531869145745679
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2025
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2131
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17507305812902296
+Time elapsed: 9382.111350774765
+Learning rate: 1
+--------------EPOCH  199 ------------
+Absolute Loss: 0.5528419282066621
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2017
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.3071
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17478842771528766
+Time elapsed: 9428.2405564785
+Learning rate: 1
+--------------EPOCH  200 ------------
+Absolute Loss: 0.5524609474742593
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2009
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.7528
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17566930710654255
+Time elapsed: 9472.420992612839
+Learning rate: 0.5
+--------------EPOCH  201 ------------
+Absolute Loss: 0.5521778096576488
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2003
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.1092
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17512801577904358
+Time elapsed: 9518.660125255585
+Learning rate: 1
+--------------EPOCH  202 ------------
+Absolute Loss: 0.5520304286312048
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.2000
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.5313
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17443753675115592
+Time elapsed: 9563.542273044586
+Learning rate: 1
+--------------EPOCH  203 ------------
+Absolute Loss: 0.5519680650555576
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1998
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2718
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1745787953382631
+Time elapsed: 9607.959701061249
+Learning rate: 1
+--------------EPOCH  204 ------------
+Absolute Loss: 0.5518412682487301
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1996
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0240
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17473205452762527
+Time elapsed: 9651.966807126999
+Learning rate: 1
+--------------EPOCH  205 ------------
+Absolute Loss: 0.5517693452974927
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1994
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.5898
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17490836956121958
+Time elapsed: 9699.693557024002
+Learning rate: 1
+--------------EPOCH  206 ------------
+Absolute Loss: 0.5516456199205101
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1991
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.4879
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17480786131144324
+Time elapsed: 9745.882229328156
+Learning rate: 0.5
+--------------EPOCH  207 ------------
+Absolute Loss: 0.5515347991616013
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1989
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.5831
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17456533200878968
+Time elapsed: 9794.131001710892
+Learning rate: 1
+--------------EPOCH  208 ------------
+Absolute Loss: 0.5514110846064693
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1986
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0003
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17449332200369289
+Time elapsed: 9836.234509944916
+Learning rate: 0.25
+--------------EPOCH  209 ------------
+Absolute Loss: 0.5510344386219229
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1978
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.8359
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17434472608216625
+Time elapsed: 9881.054914951324
+Learning rate: 1
+--------------EPOCH  210 ------------
+Absolute Loss: 0.549757293691684
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1950
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2112
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.173354819542769
+Time elapsed: 9927.05196261406
+Learning rate: 1
+--------------EPOCH  211 ------------
+Absolute Loss: 0.549064427529779
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1935
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.0821
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17447776561576045
+Time elapsed: 9971.5727186203
+Learning rate: 0.5
+--------------EPOCH  212 ------------
+Absolute Loss: 0.5489088036867296
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1932
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2370
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17436960245157604
+Time elapsed: 10023.9575881958
+Learning rate: 1
+--------------EPOCH  213 ------------
+Absolute Loss: 0.5488043945214393
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1930
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.7822
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17424314500197077
+Time elapsed: 10069.97134399414
+Learning rate: 1
+--------------EPOCH  214 ------------
+Absolute Loss: 0.5487283625341157
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1928
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.2852
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17458704341844794
+Time elapsed: 10119.10723400116
+Learning rate: 1
+--------------EPOCH  215 ------------
+Absolute Loss: 0.5485917760697201
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1925
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.5771
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743631308270147
+Time elapsed: 10166.629397392273
+Learning rate: 1
+--------------EPOCH  216 ------------
+Absolute Loss: 0.5485337421435593
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1924
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.1523
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17436506830109774
+Time elapsed: 10214.414194107056
+Learning rate: 1
+--------------EPOCH  217 ------------
+Absolute Loss: 0.5485191544049944
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1923
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.3047
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17435762766669205
+Time elapsed: 10266.402440786362
+Learning rate: 1
+--------------EPOCH  218 ------------
+Absolute Loss: 0.5485147974729654
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1923
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.5485
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743213878233043
+Time elapsed: 10317.428147554398
+Learning rate: 1
+--------------EPOCH  219 ------------
+Absolute Loss: 0.5484972416843701
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1923
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2495
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17440331986930863
+Time elapsed: 10368.500742673874
+Learning rate: 1
+--------------EPOCH  220 ------------
+Absolute Loss: 0.5484789881023119
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1923
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.3476
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17439516996151405
+Time elapsed: 10416.259090662003
+Learning rate: 1
+--------------EPOCH  221 ------------
+Absolute Loss: 0.5484740030748088
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1923
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.4138
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17439222423315565
+Time elapsed: 10469.627603769302
+Learning rate: 1
+--------------EPOCH  222 ------------
+Absolute Loss: 0.5484697332287913
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.1407
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743671071521849
+Time elapsed: 10525.094381570816
+Learning rate: 0.5
+--------------EPOCH  223 ------------
+Absolute Loss: 0.5484679134105941
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.8358
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17434033342737662
+Time elapsed: 10579.44698190689
+Learning rate: 1
+--------------EPOCH  224 ------------
+Absolute Loss: 0.5484665406039635
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  9.3573
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17432945472293152
+Time elapsed: 10628.899247646332
+Learning rate: 1
+--------------EPOCH  225 ------------
+Absolute Loss: 0.5484662246686589
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.3449
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433153443407967
+Time elapsed: 10682.838420152664
+Learning rate: 1
+--------------EPOCH  226 ------------
+Absolute Loss: 0.548466036400956
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.2940
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433349747596186
+Time elapsed: 10741.724888324738
+Learning rate: 1.1368683772161603e-13
+--------------EPOCH  227 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11111.89729976654
+Learning rate: 2.842170943040401e-14
+--------------EPOCH  228 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11153.523803472519
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  229 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11196.680887699127
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  230 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11238.945258378983
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  231 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11281.353440999985
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  232 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918424
+Time elapsed: 11325.4555580616
+Learning rate: 9.094947017729282e-13
+--------------EPOCH  233 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918418
+Time elapsed: 11363.530180692673
+Learning rate: 7.275957614183426e-12
+--------------EPOCH  234 ------------
+Absolute Loss: 0.5484660006385494
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918404
+Time elapsed: 11400.012870788574
+Learning rate: 1.1368683772161603e-13
+--------------EPOCH  235 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743354781591841
+Time elapsed: 11475.32431101799
+Learning rate: 5.684341886080802e-14
+--------------EPOCH  236 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11516.597749948502
+Learning rate: 1.1368683772161603e-13
+--------------EPOCH  237 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743354781591841
+Time elapsed: 11556.277428627014
+Learning rate: 2.842170943040401e-14
+--------------EPOCH  238 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.1743354781591841
+Time elapsed: 11598.205374240875
+Learning rate: 2.842170943040401e-14
+--------------EPOCH  239 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11640.357267856598
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  240 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11684.502250432968
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  241 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11726.461482524872
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  242 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11768.77781176567
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  243 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11813.530643463135
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  244 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11855.791107177734
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  245 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11898.597181558609
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  246 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11941.91355729103
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  247 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 11986.153381824493
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  248 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12029.412915945053
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  249 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12072.896364688873
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  250 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12116.192662239075
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  251 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12159.996277570724
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  252 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12203.013797044754
+Learning rate: 2.842170943040401e-14
+--------------EPOCH  253 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12246.079871416092
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  254 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12290.097778558731
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  255 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12333.01289319992
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  256 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12377.006966352463
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  257 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12419.858198165894
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  258 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12464.10973906517
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  259 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12506.921275615692
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  260 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12550.884720087051
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  261 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12591.976457357407
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  262 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12636.76132106781
+Learning rate: 1.4210854715202004e-14
+--------------EPOCH  263 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12679.734917163849
+Learning rate: 7.105427357601002e-15
+--------------EPOCH  264 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12725.230132818222
+Learning rate: 7.105427357601002e-15
+--------------EPOCH  265 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12769.92073893547
+Learning rate: 7.105427357601002e-15
+--------------EPOCH  266 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12814.162784099579
+Learning rate: 7.105427357601002e-15
+--------------EPOCH  267 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12858.84816288948
+Learning rate: 7.105427357601002e-15
+--------------EPOCH  268 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12900.93433713913
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  269 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12948.020484924316
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  270 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 12994.074199438095
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  271 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13039.91835641861
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  272 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13085.739135980606
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  273 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13130.092232942581
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  274 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13176.358939647675
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  275 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13221.64315533638
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  276 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13268.9511551857
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  277 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13315.375217199326
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  278 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13360.396821022034
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  279 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13406.620372533798
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  280 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13450.519481420517
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  281 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13496.921255350113
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  282 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13540.83378982544
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  283 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13587.197493314743
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  284 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13631.291683912277
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  285 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13676.069959640503
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  286 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13721.24743938446
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  287 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13767.462465763092
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  288 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13810.47586107254
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  289 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13856.4416077137
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  290 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13900.494801282883
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  291 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13947.28328537941
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  292 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 13993.238772153854
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  293 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14040.048521518707
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  294 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14084.959745883942
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  295 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14131.1203622818
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  296 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14175.472111701965
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  297 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14221.968118667603
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  298 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Relative Test error: 0.17433547815918407
+Time elapsed: 14266.08250784874
+Learning rate: 1.7763568394002505e-15
+--------------EPOCH  299 ------------
+Absolute Loss: 0.5484660006385491
+Relative Loss: Variable containing:
+1.00000e-04 *
+  1.1922
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.9812
+[torch.DoubleTensor of size 1]
+
+Weights norm 103.44222867141936
+Relative Test error: 0.17433547815918407
+Time elapsed: 14312.874235391617

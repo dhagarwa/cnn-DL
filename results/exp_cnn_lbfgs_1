@@ -1,0 +1,69 @@
+epochs: 100 batch size 128
+Net (
+  (fc1): Linear (128 -> 128)
+  (error_function): MSELoss (
+  )
+)
+Condition number: 1.93639231528
+Initial grad norm: Variable containing:
+ 26.0454
+[torch.DoubleTensor of size 1]
+
+Learning rate: 0.5
+--------------EPOCH  0 ------------
+Relative Loss: Variable containing:
+1.00000e-33 *
+  2.4938
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-17 *
+  4.9938
+[torch.DoubleTensor of size 1]
+
+--------------EPOCH  20 ------------
+Relative Loss: Variable containing:
+1.00000e-33 *
+  2.4938
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-17 *
+  4.9938
+[torch.DoubleTensor of size 1]
+
+--------------EPOCH  40 ------------
+Relative Loss: Variable containing:
+1.00000e-33 *
+  2.4938
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-17 *
+  4.9938
+[torch.DoubleTensor of size 1]
+
+--------------EPOCH  60 ------------
+Relative Loss: Variable containing:
+1.00000e-33 *
+  2.4938
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-17 *
+  4.9938
+[torch.DoubleTensor of size 1]
+
+--------------EPOCH  80 ------------
+Relative Loss: Variable containing:
+1.00000e-33 *
+  2.4938
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-17 *
+  4.9938
+[torch.DoubleTensor of size 1]
+
+------------Printing TEST CASE ERROR:----------
+Relative error: 7.03772183773658e-16

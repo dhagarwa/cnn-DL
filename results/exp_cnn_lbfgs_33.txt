@@ -1,0 +1,179 @@
+epochs: 100  batch size: 128  reg_parameter: 0.0001
+Net (
+  (conv1): Conv1d(1, 16, kernel_size=(4,), stride=(1,))
+  (pool1): MaxPool1d (size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv1d(16, 16, kernel_size=(4,), stride=(2,))
+  (conv3): Conv1d(16, 1, kernel_size=(20,), stride=(1,))
+  (fc1): Linear (11 -> 11)
+  (conv4): Conv1d(1, 16, kernel_size=(4,), stride=(1,))
+  (pool2): MaxPool1d (size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv5): Conv1d(16, 16, kernel_size=(8,), stride=(1,))
+  (error_function): MSELoss (
+  )
+)
+Condition number: 1.93639231528
+Initial Loss: 
+ 1787.4538
+[torch.DoubleTensor of size 1]
+
+Initial grad norm: Variable containing:
+ 17201.1022
+[torch.DoubleTensor of size 1]
+
+Learning rate: 5
+--------------EPOCH  0 ------------
+Relative Loss: Variable containing:
+1.00000e-02 *
+  7.1524
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  2.0903
+[torch.DoubleTensor of size 1]
+
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 0.625
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 0.625
+Learning rate: 1.25
+Learning rate: 1.25
+--------------EPOCH  20 ------------
+Relative Loss: Variable containing:
+1.00000e-02 *
+  6.4237
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  7.0870
+[torch.DoubleTensor of size 1]
+
+Learning rate: 5
+Learning rate: 5
+Learning rate: 5
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 0.625
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+--------------EPOCH  40 ------------
+Relative Loss: Variable containing:
+1.00000e-02 *
+  6.3293
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.2113
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.25
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 5
+Learning rate: 5
+Learning rate: 5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 1.25
+--------------EPOCH  60 ------------
+Relative Loss: Variable containing:
+1.00000e-02 *
+  6.3098
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.7492
+[torch.DoubleTensor of size 1]
+
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+--------------EPOCH  80 ------------
+Relative Loss: Variable containing:
+1.00000e-02 *
+  6.2988
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.4830
+[torch.DoubleTensor of size 1]
+
+Learning rate: 5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 5
+Learning rate: 1.25
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 2.5
+Learning rate: 1.25
+Learning rate: 5
+Learning rate: 2.5
+------------Printing TEST CASE ERROR:----------
+Relative error: 1.4490917406481343

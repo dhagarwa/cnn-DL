@@ -1,0 +1,617 @@
+epochs: 400  batch size: 128  reg_parameter: 0.01
+Net (
+  (conv1): Conv1d(1, 16, kernel_size=(4,), stride=(1,))
+  (pool1): MaxPool1d (size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv1d(16, 16, kernel_size=(4,), stride=(2,))
+  (pool2): MaxPool1d (size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): Conv1d(16, 16, kernel_size=(8,), stride=(1,))
+  (error_function): MSELoss (
+  )
+)
+Condition number: 1.93639231528
+Initial grad norm: Variable containing:
+ 2773.9476
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+--------------EPOCH  0 ------------
+Relative Loss: Variable containing:
+ 0.5430
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  2.3014
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  20 ------------
+Relative Loss: Variable containing:
+ 0.5155
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-03 *
+  1.7042
+[torch.DoubleTensor of size 1]
+
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 0.25
+Learning rate: 0.25
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.25
+Learning rate: 1.0
+--------------EPOCH  40 ------------
+Relative Loss: Variable containing:
+ 0.5151
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.1436
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  60 ------------
+Relative Loss: Variable containing:
+ 0.5105
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.0819
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  80 ------------
+Relative Loss: Variable containing:
+ 0.5086
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.2239
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  100 ------------
+Relative Loss: Variable containing:
+ 0.5082
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  6.7286
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  120 ------------
+Relative Loss: Variable containing:
+ 0.5081
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.4939
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  140 ------------
+Relative Loss: Variable containing:
+ 0.5079
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  5.0291
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  160 ------------
+Relative Loss: Variable containing:
+ 0.5076
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  7.4534
+[torch.DoubleTensor of size 1]
+
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  180 ------------
+Relative Loss: Variable containing:
+ 0.5073
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  8.2936
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  200 ------------
+Relative Loss: Variable containing:
+ 0.5069
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  4.1714
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  220 ------------
+Relative Loss: Variable containing:
+ 0.5068
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.7766
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  240 ------------
+Relative Loss: Variable containing:
+ 0.5068
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.6616
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  260 ------------
+Relative Loss: Variable containing:
+ 0.5067
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.8187
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  280 ------------
+Relative Loss: Variable containing:
+ 0.5067
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.1519
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  300 ------------
+Relative Loss: Variable containing:
+ 0.5067
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.8027
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  320 ------------
+Relative Loss: Variable containing:
+ 0.5062
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  3.4421
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 0.5
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  340 ------------
+Relative Loss: Variable containing:
+ 0.5061
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  1.3476
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  360 ------------
+Relative Loss: Variable containing:
+ 0.5061
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.4099
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+--------------EPOCH  380 ------------
+Relative Loss: Variable containing:
+ 0.5061
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-04 *
+  2.0871
+[torch.DoubleTensor of size 1]
+
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+Learning rate: 1.0
+------------Printing TEST CASE ERROR:----------
+Relative error: 1.0412497141350727

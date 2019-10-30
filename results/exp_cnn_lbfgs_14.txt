@@ -1,0 +1,40 @@
+epochs: 40  batch size: 128  reg_parameter: 1e-09
+Net (
+  (fc1): Linear (128 -> 128)
+  (error_function): MSELoss (
+  )
+)
+Condition number: 1.93639231528
+Initial Loss: 
+ 170.0349
+[torch.DoubleTensor of size 1]
+
+Initial grad norm: Variable containing:
+ 26.0795
+[torch.DoubleTensor of size 1]
+
+Learning rate: 0.5
+--------------EPOCH  0 ------------
+Relative Loss: Variable containing:
+1.00000e-11 *
+  6.6544
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-11 *
+  5.4083
+[torch.DoubleTensor of size 1]
+
+--------------EPOCH  20 ------------
+Relative Loss: Variable containing:
+1.00000e-11 *
+  6.6544
+[torch.DoubleTensor of size 1]
+
+Relative Grad Norm: Variable containing:
+1.00000e-11 *
+  5.4083
+[torch.DoubleTensor of size 1]
+
+------------Printing TEST CASE ERROR:----------
+Relative error: 5.0788768205483606e-11
